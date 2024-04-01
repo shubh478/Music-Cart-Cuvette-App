@@ -216,7 +216,7 @@ const ProductDetails = () => {
             <span>Home / {product.name}</span>
           </div>
           <div>
-            <CartBtn count={count} />
+            <div>{isAuthorized && <CartBtn count={count} />}</div>
           </div>
         </div>
         <div>
